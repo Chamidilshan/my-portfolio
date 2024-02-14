@@ -78,8 +78,8 @@ const portfolios = [
     technologies: ["React", "Tailwind css", "Node.js", "MongoDB"],
     siteUrl: "#",
   },
-  {
-    id: "08",
+  { 
+    id: "08", 
     imgUrl: portfolioImg01,
     category: "Web Design",
     title: "Finance Technology Website",

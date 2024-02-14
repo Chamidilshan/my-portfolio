@@ -41,7 +41,7 @@ const Projects = ({openModal,setOpenModal}) => {
           }
         </ToggleButtonGroup> */}
         <CardContainer 
-         data-aos= 'zoom-in-up' 
+         data-aos= 'zoom-in-up'  
          data-aos-duration='1000' >
           {toggle === 'all' && projects
             .map((project) => (
