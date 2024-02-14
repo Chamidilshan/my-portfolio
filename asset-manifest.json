@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/my-portfolio/static/css/main.ea1f02d1.css",
+    "main.js": "/my-portfolio/static/js/main.856ed926.js",
+    "static/media/remixicon.svg?t=1590207869815": "/my-portfolio/static/media/remixicon.9cedd2150922ead84869.svg",
+    "static/media/remixicon.eot?t=1590207869815": "/my-portfolio/static/media/remixicon.5cb99e6cba5a4619063f.eot",
+    "static/media/remixicon.ttf?t=1590207869815": "/my-portfolio/static/media/remixicon.f2616f597cf98f38d234.ttf",
+    "static/media/remixicon.woff?t=1590207869815": "/my-portfolio/static/media/remixicon.8d09fa11700ed63cf96e.woff",
+    "static/media/remixicon.woff2?t=1590207869815": "/my-portfolio/static/media/remixicon.90668f6f9b3c2c18a090.woff2",
+    "static/media/hero.png": "/my-portfolio/static/media/hero.2bdcc8cb52641490c831.png",
+    "index.html": "/my-portfolio/index.html",
+    "main.ea1f02d1.css.map": "/my-portfolio/static/css/main.ea1f02d1.css.map",
+    "main.856ed926.js.map": "/my-portfolio/static/js/main.856ed926.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ea1f02d1.css",
+    "static/js/main.856ed926.js"
+  ]
+}
