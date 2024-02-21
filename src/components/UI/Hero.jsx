@@ -3,7 +3,7 @@ import heroImg from '../../assets/images/hero.png'
 import CountUp from 'react-countup' 
 import {Bio} from '../../data/constants'
 import Typewriter from 'typewriter-effect'; 
-import { FaFacebookF, FaYoutube, FaLinkedinIn, FaReact, FaNode, FaMedium   } from "react-icons/fa";
+import { FaFacebookF, FaYoutube, FaLinkedinIn, FaReact, FaNode, FaMedium , FaGithub  } from "react-icons/fa";
 import { SiTailwindcss, SiFigma, SiNextdotjs, SiFlutter, SiMedium   } from "react-icons/si";
 
 const Hero = () => {
@@ -68,13 +68,13 @@ const Hero = () => {
             Find me in
           </h2>
           <div className="flex gap-4">
-            <a href="https://www.youtube.com/@reactjsBD" target="_blank">
+            <a href="https://github.com/Chamidilshan" target="_blank">
               <span className="bannerIcon">
-                <FaYoutube />
+                <FaGithub />
               </span>
             </a>
             <a
-              href="https://www.linkedin.com/in/noor-mohammad-ab2245193/"
+              href="https://www.linkedin.com/in/chamikadilshan/"
               target="_blank"
             >
               <span className="bannerIcon">
@@ -82,48 +82,26 @@ const Hero = () => {
               </span>
             </a>
             <a
-              href="https://www.linkedin.com/in/noor-mohammad-ab2245193/"
+              href="https://chamidilshan.medium.com/"
               target="_blank"
             >
               <span className="bannerIcon">
                 <SiMedium   />
               </span>
             </a>
-            <a href="https://www.facebook.com/Noorlalu143/" target="_blank">
+            <a href="https://www.facebook.com/chamika.dilshan.3386" target="_blank">
               <span className="bannerIcon">
                 <FaFacebookF />
               </span>
             </a>
           </div> 
         </div>
-        {/* <div className='mt-10'>
-          <h2 className="text-base uppercase font-titleFont mb-4">
-            BEST SKILL ON
-          </h2>
-          <div className="flex gap-4">
-          <span className="bannerIcon">
-              <SiFlutter />
-            </span>
-            <span className="bannerIcon">
-              <FaReact />
-            </span>
-            <span className="bannerIcon">
-              <FaNode  />
-            </span>
-            {/* <span className="bannerIcon">
-              <SiTailwindcss />
-            </span>
-            <span className="bannerIcon">
-              <SiFigma />
-            </span> */}
-          {/* </div> */}
-        {/* </div> */} 
       </div>
                 </div>
 
                 <div className='basis-1/3 mt-10 sm:mt-0'>
                     <figure className='flex items-center justify-center'>
-                        <img src={heroImg}></img>
+                        <img src={heroImg}></img> 
                     </figure>
                 </div>
             </div>
