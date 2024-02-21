@@ -25,7 +25,8 @@ jobs:
         cache: "npm"
     - name: Install Packages
       run: npm ci
-    
+    - name: Build
+      run: npm run build
  
     - name: Deploy🚀
       uses: JamesIves/github-pages-deploy-action@v4
