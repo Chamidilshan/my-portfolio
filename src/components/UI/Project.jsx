@@ -39,7 +39,7 @@ const Projects = ({openModal,setOpenModal}) => {
             :
             <ToggleButton value="machine learning" onClick={() => setToggle('machine learning')}>MACHINE LEARNING</ToggleButton>
           }
-        </ToggleButtonGroup> */}
+        </ButtonGroup> */}
         <CardContainer 
          data-aos= 'zoom-in-up'  
          data-aos-duration='1000' >

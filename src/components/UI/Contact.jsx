@@ -29,7 +29,7 @@ const Index = () => {
   
 
   return (
-    <section id="contact" className="flex flex-wrap justify-around gap-8 py-12">
+    <section id="contact" className="flex flex-wrap justify-around gap-8 py-12 px-8">
       <div className="w-full md:w-1/2">
        <Title>Contact Me</Title>
        <Desc>

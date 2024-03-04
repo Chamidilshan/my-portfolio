@@ -26,7 +26,7 @@ function App() {
         <Education/>
         <Contact/>
       </main>
-    <Footer />
+    {/* <Footer /> */}
     {openModal.state &&
             <ProjectDetails openModal={openModal} setOpenModal={setOpenModal} />
           } 
