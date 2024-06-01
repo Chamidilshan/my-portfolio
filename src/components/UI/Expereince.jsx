@@ -12,6 +12,7 @@ import { experiences } from '../../data/constants';
 
 const Container = styled.div` 
     display: flex;
+    color: #ffffff;
     flex-direction: column; 
     justify-content: center;
     position: relative;
@@ -87,10 +88,10 @@ const index = () => {
                         {experiences.map((experience,index) => (
                             <TimelineItem>
                                 <TimelineSeparator>
-                                    <TimelineDot variant="outlined" color="secondary" />
-                                    {index !== experiences.length - 1 && <TimelineConnector style={{ background: '#854CE6' }} />}
+                                    <TimelineDot variant="outlined" style={{ background: '#197FE6' }} />
+                                    {index !== experiences.length - 1 && <TimelineConnector style={{ background: '#197FE6' }} />}
                                 </TimelineSeparator>
-                                <TimelineContent sx={{ py: '12px', px: 2 }}>
+                                <TimelineContent sx={{ py: '12px', px: 2 }}> 
                                     <ExperienceCard experience={experience}/>
                                 </TimelineContent>
                             </TimelineItem>

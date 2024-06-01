@@ -20,7 +20,7 @@ function App() {
   return <>
     <Header />
       <main>
-        <Hero/>
+        <Hero/> 
         <Experience/>
         <Project openModal={openModal} setOpenModal={setOpenModal} />
         <Education/>

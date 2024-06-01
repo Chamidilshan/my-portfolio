@@ -11,6 +11,7 @@ import styled from 'styled-components'
 
 const Container = styled.div`
     display: flex;
+    color: #ffffff;
     flex-direction: column;
     justify-content: center;
     position: relative;
@@ -92,8 +93,8 @@ const index = () => {
                                     <EducationCard education={education}/>
                                 </TimelineContent>
                                 <TimelineSeparator>
-                                    <TimelineDot variant="outlined" color="secondary" />
-                                    {index !== experiences.length  && <TimelineConnector style={{ background: '#854CE6' }} />}
+                                <TimelineDot variant="outlined" style={{ background: '#197FE6' }} />
+                                    {index !== experiences.length  && <TimelineConnector style={{ background: '#197FE6' }} />}
                                 </TimelineSeparator>
                             </TimelineItem>
                         ))}

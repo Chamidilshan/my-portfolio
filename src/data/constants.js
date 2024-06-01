@@ -236,23 +236,23 @@ export const Bio = {
   ];
   
   export const experiences = [
-    {
-      id: 0,
-      img: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAQlBMVEVHcEwAQXsAQXsAQXsAQXoAQXoAQXsARoEAN3cwWodiepagq7a4v8bLzs+Ql57o6On///8ATYkBYJ8BVpQBbaxgl8BYwyGlAAAABnRSTlMAZnp4eHpxgpewAAAA8UlEQVR4AX3TB5aDMAwAUcBF7kXe3P+qK+RYpE8Kfnx62bb9UDOtZXKOzE5mv7ZvZg0BeOI4Hh6bEvIhpkylWErwNE8xspXaHiruRD3N5/ZUYFRskNpzc7Oazb9YBUZ1Yi+Ni4hjjN6B5k0k65Gt4h+FyA6EWpAqyEi6kGyENssBZVWrN8U4cltcPK3KqO6IKNpqGa+Ityqc/ROO80huWbQ/IymV7hoY+VQEae2JEUDwUqyMiZBPRZQcw8RoQe5KWcVpLQCjJvTtperkrrjwit5eWF7W8ySCIddLUnB2oVmPI3iq09iujt8PtbwOrx379g/8CCGyX5n8awAAAABJRU5ErkJggg==",
-      role: "Software Engineer",
-      company: "SCITS  (Remote)",
-      date: "Jan 2024 - Present",
-      desc: "Developed the big screen real-time score board system for Sri Lanka Cricket. It utilizes Node.js and Socket.IO to fetch real-time data from a MySQL database. It was successfully tested and used during the Zimbabwe tour in January 2024 and will be used for all cricket matches in Sri Lanka going forward.", 
-      skills: [
-        "ReactJS",
-        "Socket.io",
-        "NodeJs",
-        "Tailiwind CSS",
-        "MySQL",
-        "Flutter",
-      ],
-      doc: "https://github-production-user-asset-6210df.s3.amazonaws.com/89196733/304622622-ebdc0171-2239-4319-996a-666eec1c00a3.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240214%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240214T062429Z&X-Amz-Expires=300&X-Amz-Signature=a5fcee79f67372d826c863c20728b389ab58e5b495bf964811aa495276379002&X-Amz-SignedHeaders=host&actor_id=89196733&key_id=0&repo_id=756392214",
-    },
+    // {
+    //   id: 0,
+    //   img: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAQlBMVEVHcEwAQXsAQXsAQXsAQXoAQXoAQXsARoEAN3cwWodiepagq7a4v8bLzs+Ql57o6On///8ATYkBYJ8BVpQBbaxgl8BYwyGlAAAABnRSTlMAZnp4eHpxgpewAAAA8UlEQVR4AX3TB5aDMAwAUcBF7kXe3P+qK+RYpE8Kfnx62bb9UDOtZXKOzE5mv7ZvZg0BeOI4Hh6bEvIhpkylWErwNE8xspXaHiruRD3N5/ZUYFRskNpzc7Oazb9YBUZ1Yi+Ni4hjjN6B5k0k65Gt4h+FyA6EWpAqyEi6kGyENssBZVWrN8U4cltcPK3KqO6IKNpqGa+Ityqc/ROO80huWbQ/IymV7hoY+VQEae2JEUDwUqyMiZBPRZQcw8RoQe5KWcVpLQCjJvTtperkrrjwit5eWF7W8ySCIddLUnB2oVmPI3iq09iujt8PtbwOrx379g/8CCGyX5n8awAAAABJRU5ErkJggg==",
+    //   role: "Software Engineer",
+    //   company: "SCITS  (Remote)",
+    //   date: "Jan 2024 - Mar 2024",
+    //   desc: "Developed the big screen real-time score board system for Sri Lanka Cricket. It utilizes Node.js and Socket.IO to fetch real-time data from a MySQL database. It was successfully tested and used during the Zimbabwe tour in January 2024 and will be used for all cricket matches in Sri Lanka going forward.", 
+    //   skills: [
+    //     "ReactJS",
+    //     "Socket.io",
+    //     "NodeJs",
+    //     "Tailiwind CSS",
+    //     "MySQL",
+    //     "Flutter",
+    //   ],
+    //   doc: "https://github-production-user-asset-6210df.s3.amazonaws.com/89196733/304622622-ebdc0171-2239-4319-996a-666eec1c00a3.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240214%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240214T062429Z&X-Amz-Expires=300&X-Amz-Signature=a5fcee79f67372d826c863c20728b389ab58e5b495bf964811aa495276379002&X-Amz-SignedHeaders=host&actor_id=89196733&key_id=0&repo_id=756392214",
+    // },
     {
       id: 1,
       img: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAw1BMVEX//////v////7+///89u/33s779vLup4Hrf0Tvroy4vMu6vM/R0t31z7zzxq756N/vpXwAAF0AFmdTWonZ2uP00cHqdTXsUQDqaSLrj2R4f6IbKG0iLnArN3TtVwDucDfvl3XsbirtWgDucjrw8fQ/R32DiKbrXwDxtZvxvKHtYBWqrsNrcpjzrpRHUIIUI2v7+/xia5bsd0LtYRyYm7ULHmjAw8+JkK7tg1Q6Q3xbY4/woYHztaBcbJn3tJDn1dEAAGH/vN82AAABbElEQVR4AWVSBa7DMAxN7TKOKVnpj5mZ7n+qnzVaQX2qTOozxURAInkA/woeEvxqTH+VUg7woACmQqTMcmIhPaayXFnKNHCRY8iKKsyUmvWoarqhJiQEAqZlQ2LLjmG4qldxNe9Hsau1eoNwNFttjo7rdJ00TY+yvsm11/GDMIziPyWbZjBkjI4GhLjjaKLC1J9NSIo56y/osMGZTd4leu3ZMu0SFnRls/V8IxpHw++4KdFerUeD7Xo74DZM9d1+pkG60gM7Nsh8zQUPLf1Z3FIgbWdB2WBw6q/PPC8o08nFj5q//Z2u7LrY3rgciPV5fnwH0dHmQNmxVqut2dFyHq5HEGM/VAWzcaMrk+MwpM9Xe2ao4HImkgQnuj5sROn1exZHl0vkB00x1aD3+djJgxxqn4MSJbv9LXbTsBubpLcBtwgq7lTBhFYCIOJXApHEKECgcJJCCl2+GyQg5WKYemVg4bxLadMrl3IV/gF1FB4AYcyb0wAAAABJRU5ErkJggg==",
@@ -273,12 +273,12 @@ export const Bio = {
       img: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAWlBMVEVHcEwcv3Mdv3Mdv3Mdv3Mdv3Mdv3Mdv3Mdv3Mdv3Mdv3Mdv3Mdv3Mdv3MZvnEownpEyouN37mx6c/P8uFSzpTY9Of///8xxYDF79tp1aL2/fl+26/r+fOD3LMHiQuEAAAADnRSTlMAAi91odHr/T3b/x2LwH642EYAAAEXSURBVHgBfJIFEoQwEATjC/HD9f/fPGxTWNE40/GQBGVcSAWgpOCMkjs0EznoA8hFdlOMVfoMKGvOeeZA3wCXnfJcvyCzR+69Dgt3wzjM468oy7JIhtv6QS1+V3WzUiYBLF0bwP63XYMCopZGqMAG+mFJu9+vDzqxVMFy7OC45HXrd/ROzgiHowN9sQr9DtYCnGALeweQKR51CCL1RiheBZAEx1AMw5oMC+caFIGjhljtfaiqcTgJcAg4ii54X10FpdGYN0FfBUXktyCJ+BRAEA6fAk9T/S7kjFDxJViKy/0qgMrOGyaO49yv+2JcCKmC85ZbOD/BmfdNjUj2H+Fkj8g4XJgZh4lQ1kPPvDzImZcHnnkJZn8ACoYrvpoAaW4AAAAASUVORK5CYII=",
       role: "Freelancer",
       company: "Fiverr",
-      date: "June 2021 - Oct 2021",
+      date: "June 2023 - Oct 2023",
       desc: "Created a taxi app called Jeitak Taxi using Flutter and following clean architecture principles. For user authentication, I utilized Firebase phone authentication. The app features live location tracking and search functionality using the Google Maps API. Additionally, it includes functionality for displaying short-distance routes also and card details saving",
       skills: [
         "Flutter",
         "Firebase",
-        "Google Map Api"
+        "Google Map" 
       ],
       doc: "https://github-production-user-asset-6210df.s3.amazonaws.com/89196733/304622622-ebdc0171-2239-4319-996a-666eec1c00a3.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240214%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240214T062429Z&X-Amz-Expires=300&X-Amz-Signature=a5fcee79f67372d826c863c20728b389ab58e5b495bf964811aa495276379002&X-Amz-SignedHeaders=host&actor_id=89196733&key_id=0&repo_id=756392214",
     },
@@ -350,13 +350,13 @@ export const Bio = {
     },
     {
       id: 2,
-      title: "SL Explorer Mobile, Web System",
-      date: "Dec 2023 - Present", 
+      title: "SL Explorer System", 
+      date: "Dec 2023 - Apr 2024", 
       description:
       "Designed and developed a mobile and web app for SL Explorer, a travel company. It's a one-stop solution for anyone eager to explore the beauty of Sri Lanka.",
       image: 
-        "https://github.com/Chamidilshan/my-portfolio/assets/89196733/41cddfca-4b30-475b-b32f-42c41267264b",
-      tags: ["React.js", "Node.js", "Flutter", "Docker", "MongoDB", "Materail UI", "Firebase"],
+        "https://github.com/Chamidilshan/translator-web-app/assets/89196733/4f27107c-cf06-4e6b-9a69-1eb53b4c00c5",
+      tags: ["React.js", "Node.js", "Flutter", "MongoDB", "Materail UI", "Firebase"],
       github: "https://github.com/Chamidilshan/sl-explorer-admin-web",
     },
     {
@@ -366,10 +366,34 @@ export const Bio = {
       description:
         "Developed a lively quiz app centered on commerce using Flutter. It taps into Firebase Realtime Database for storing and fetching quiz questions. With multiple-choice questions and randomized selections from a large pool, users enjoy a dynamic experience. The app tracks scores and displays the final tally, all while seamlessly integrating with Firebase for smooth data management. Installing it is a breeze, making it accessible for anyone eager to dive into the world of commerce quizzes.",
       image:
-        "https://github.com/Chamidilshan/my-portfolio/assets/89196733/ebdc0171-2239-4319-996a-666eec1c00a3",
-      tags: ["Flutter", "Firebase", "Cloud Firestore", ""],
+      "https://github.com/Chamidilshan/translator-web-app/assets/89196733/ed3bc47f-6232-4a0d-871e-4b244f886104",
+      tags: ["Flutter", "Firebase", "Firestore",],
       category: "android app",
       github: "https://github.com/Chamidilshan/Quiz_app", 
+    },
+    {
+      id: 4,
+      title: "Translator Web App",
+      date: "Feb 2024",
+      description:
+        "Developed an AI-powered web app built with Next.js and Hugging Face API, providing seamless translation across multiple languages",
+      image:
+        "https://github.com/Chamidilshan/translator-web-app/assets/89196733/11671c08-f840-44a4-840b-8b7a1a32858c",
+      tags: ["Next.js", "Hugging Face",],
+      category: "web app",  
+      github: "https://github.com/Chamidilshan/translator-web-app", 
+    },
+    {
+      id: 6,
+      title: "Learn Programming App",
+      date: "Feb 2024",
+      description:
+        "Developed an AI-powered web app built with Next.js and Hugging Face API, providing seamless translation across multiple languages",
+      image:
+        "https://github.com/Chamidilshan/translator-web-app/assets/89196733/e2bce9e9-8219-4f82-9cd1-bccecb62d58c",
+      tags: ["Flutter", "Firebase",],
+      category: "Flutter", 
+      github: "https://github.com/Chamidilshan/translator-web-app", 
     },
   ];
   

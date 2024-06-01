@@ -18,7 +18,7 @@ const Description = styled.div`
     width: 100%;
     font-size: 15px;
     font-weight: 400;
-    color: ${({ theme }) => theme.text_primary + 99};
+    color: #94A3B8;
     margin-bottom: 10px;
     @media only screen and (max-width: 768px){
         font-size: 12px;
@@ -65,7 +65,7 @@ const Card = styled.div`
         -webkit-line-clamp: unset;
 
     }
-    border: 0.1px solid #854CE6;
+    border: 0.1px solid #197FE6;
 `
 
 const Top = styled.div`
@@ -102,7 +102,7 @@ const Name = styled.div`
 
 const Degree = styled.div`
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 500; 
     color: ${({ theme }) => theme.text_secondary + 99};
     @media only screen and (max-width: 768px){
         font-size: 12px;
@@ -111,8 +111,8 @@ const Degree = styled.div`
 
 const Date = styled.div`
     font-size: 12px;
-    font-weight: 400;
-    color: ${({ theme }) => theme.text_secondary + 80};
+    font-weight: 200; 
+    color: ${({ theme }) => theme.text_primary + 99};
     @media only screen and (max-width: 768px){
         font-size: 10px;
     }
@@ -120,7 +120,7 @@ const Date = styled.div`
 
 const Grade = styled.div`
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 200;
     color: ${({ theme }) => theme.text_secondary + 99};
     @media only screen and (max-width: 768px){
         font-size: 12px;
@@ -143,7 +143,9 @@ const EducationCard = ({ education }) => {
             </Top>
             <Grade>{education.grade}</Grade>
             <Description>
-                <Span>{education.desc}</Span>
+                {/* <Span> */}
+                    {education.desc}
+                    {/* </Span> */}
             </Description>
         </Card>
     )

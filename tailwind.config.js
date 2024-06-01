@@ -4,13 +4,19 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primaryColor: "#8873ef",
-        headingColor: "#081e21",
-        smallTextColor: "#193256",
+        primaryColor: "#197FE6",
+        headingColor: "#F3F4F6",
+        smallTextColor: "#F3F4F6",
       },
       width: {
         '120': '60rem', // 120/4 = 30rem
-      }
+      },
+      fontFamily: {
+        'urbanist': ['Urbanist', 'sans-serif'],
+      },
+      fontWeight: {
+        'semibold': 600,
+      },
     },
   },
   plugins: [],

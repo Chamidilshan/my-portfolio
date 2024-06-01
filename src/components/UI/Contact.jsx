@@ -30,7 +30,7 @@ const Index = () => {
 
   return (
     <section id="contact" className="flex flex-wrap justify-around gap-8 py-12 px-8">
-      <div className="w-full md:w-1/2">
+      <div className="w-full md:w-1/2 text-white">
        <Title>Contact Me</Title>
        <Desc>
        You're welcome to contact me with any inquiries. Let's talk about your ideas and engage in meaningful conversations.
@@ -45,7 +45,7 @@ const Index = () => {
               <label 
               data-aos= 'fade-left' 
               data-aos-duration='1000'
-              htmlFor="email" className="text-black block mb-2 text-lg font-medium">
+              htmlFor="email" className="text-white block mb-2 text-lg font-medium">
                 Your email
               </label>
               <input
@@ -63,7 +63,7 @@ const Index = () => {
               <label 
               data-aos= 'fade-left' 
               data-aos-duration='1000'
-              htmlFor="subject" className="text-black block text-lg mb-2 font-medium">
+              htmlFor="subject" className="text-white block text-lg mb-2 font-medium">
                 Subject
               </label>
               <input
@@ -81,7 +81,7 @@ const Index = () => {
               <label 
               data-aos= 'fade-left' 
               data-aos-duration='1000'
-              htmlFor="message" className="text-black block text-lg mb-2 font-medium">
+              htmlFor="message" className="text-white block text-lg mb-2 font-medium">
                 Message
               </label>
               <textarea

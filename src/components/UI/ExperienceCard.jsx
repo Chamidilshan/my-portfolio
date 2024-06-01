@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled from 'styled-components' 
 
 const Document = styled.img`
     display: none;
@@ -17,7 +17,7 @@ const Description = styled.div`
     width: 100%;
     font-size: 15px;
     font-weight: 400;
-    color: ${({ theme }) => theme.text_primary + 99};
+    color: #94A3B8;
     margin-bottom: 10px;
     @media only screen and (max-width: 768px){
         font-size: 12px;
@@ -103,8 +103,8 @@ const Role = styled.div`
 
 const Company = styled.div`
     font-size: 14px;
-    font-weight: 500;
-    color: ${({ theme }) => theme.text_secondary + 99};
+    font-weight: 300;
+    color: #E2E8F0;
     @media only screen and (max-width: 768px){
         font-size: 12px;
     }
@@ -113,7 +113,7 @@ const Company = styled.div`
 const Date = styled.div`
     font-size: 12px;
     font-weight: 400;
-    color: ${({ theme }) => theme.text_secondary + 80};
+    color: #94A3B8;
     @media only screen and (max-width: 768px){
         font-size: 10px;
     }
@@ -133,13 +133,26 @@ const ItemWrapper = styled.div`
     gap: 8px;
 `
 
-const Skill = styled.div`
-    font-size: 15px;
-    font-weight: 400;
-    color: ${({ theme }) => theme.text_primary + 99};
-    @media only screen and (max-width: 768px){
-        font-size: 12px;
-    }
+
+// const Skill = styled.div`
+//     font-size: 15px;
+//     font-weight: 400;
+//     color: ${({ theme }) => theme.text_primary + 99};
+//     @media only screen and (max-width: 768px){
+//         font-size: 12px;
+//     }
+// `
+
+const Skill = styled.span`
+    width: 72px;
+    height: 28px; 
+    background-color: rgba(45, 212, 191, 0.1); 
+    font-size: 12px;
+    border-radius: 9999px;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    color: #5EEAD4;
 `
 
 
@@ -157,18 +170,20 @@ const ExperienceCard = ({ experience }) => {
                 </Body>
             </Top>
             <Description>
-                {experience?.desc &&
-                    <Span>{experience?.desc}</Span>
+                {/* {experience?.desc && */}
+                    {/* <Span> */}
+                        {experience?.desc}
+                        {/* </Span> */}
 
-                }
+                {/* } */}
+                 <br /> 
                 {experience?.skills &&
                     <>
                         <br />
                         <Skills>
-                            <b>Skills:</b>
                             <ItemWrapper>
                                 {experience?.skills?.map((skill, index) => (
-                                    <Skill>• {skill}</Skill>
+                                    <Skill>{skill}</Skill>
                                 ))}
                             </ItemWrapper>
                         </Skills>
@@ -177,7 +192,7 @@ const ExperienceCard = ({ experience }) => {
             </Description>
             {experience.doc &&
                 <a href={experience.doc} target="new">
-                    <Document src={experience.doc} />
+                    {/* <Document src={experience.doc} /> */}
                 </a>
             }
         </Card>

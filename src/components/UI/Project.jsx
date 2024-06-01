@@ -9,9 +9,9 @@ const Projects = ({openModal,setOpenModal}) => {
      
   const [toggle, setToggle] = useState('all');
   return (
-    <Container id="projects">
+    <Container id="projects" className='text-white'>
       <Wrapper>
-        <Title>Projects</Title>
+        <Title >Projects</Title>
         <Desc className='pb-10'>
         I've been involved in a diverse array of projects, initially focusing on mobile and software development. Here's a glimpse of some of my work
         </Desc>
@@ -41,7 +41,7 @@ const Projects = ({openModal,setOpenModal}) => {
           }
         </ButtonGroup> */}
         <CardContainer 
-         data-aos= 'zoom-in-up'  
+         data-aos= 'zoom-in'  
          data-aos-duration='1000' >
           {toggle === 'all' && projects
             .map((project) => (

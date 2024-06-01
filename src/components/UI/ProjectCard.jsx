@@ -40,7 +40,7 @@ const Card = styled.div`
 
 const Image = styled.img`
     width: 100%;
-    height: 180px;
+    height: 110%;
     background-color: ${({ theme }) => theme.white};
     border-radius: 10px;
     box-shadow: 0 0 16px 2px rgba(0,0,0,0.3);
@@ -55,13 +55,24 @@ const Tags = styled.div`
     margin-top: 4px;
 `
 
+// const Tag = styled.span`
+//     font-size: 12px;
+//     font-weight: 400;
+//     color: ${({ theme }) => theme.primary};
+//     background-color: ${({ theme }) => theme.primary + 15};
+//     padding: 2px 8px;
+//     border-radius: 10px;
+// `
 const Tag = styled.span`
+    width: 67px;
+    height: 28px; 
+    background-color: rgba(45, 212, 191, 0.1); 
     font-size: 12px;
-    font-weight: 400;
-    color: ${({ theme }) => theme.primary};
-    background-color: ${({ theme }) => theme.primary + 15};
-    padding: 2px 8px;
-    border-radius: 10px;
+    border-radius: 9999px;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    color: #5EEAD4;
 `
 
 const Details = styled.div`
@@ -73,8 +84,8 @@ const Details = styled.div`
 `
 const Title = styled.div`
     font-size: 20px;
-    font-weight: 600;
-    color: ${({ theme }) => theme.text_secondary};
+    font-weight: 500;
+    color: #E2E8F0; 
     overflow: hidden;
     display: -webkit-box;
     max-width: 100%;
@@ -86,8 +97,8 @@ const Title = styled.div`
 
 const Date = styled.div`
     font-size: 12px;
-    margin-left: 2px;
     font-weight: 400;
+    color: #94A3B8;
     color: ${({ theme }) => theme.text_secondary + 80};
     @media only screen and (max-width: 768px){
         font-size: 10px;
@@ -96,8 +107,9 @@ const Date = styled.div`
 
 
 const Description = styled.div`
+    font-size: 15px;
     font-weight: 400;
-    color: ${({ theme }) => theme.text_secondary + 99};
+    color: #94A3B8; 
     overflow: hidden;
     margin-top: 8px;
     display: -webkit-box;
@@ -122,6 +134,7 @@ const Avatar = styled.img`
     border: 3px solid ${({ theme }) => theme.card};
 `
 
+
 const ProjectCards = ({project,setOpenModal}) => {
     return (
         <Card onClick={() => setOpenModal({state: true, project: project})}>
@@ -136,11 +149,11 @@ const ProjectCards = ({project,setOpenModal}) => {
                 <Date>{project.date}</Date>
                 <Description>{project.description}</Description>
             </Details>
-            <Members>
+            {/* <Members>
                 {project.member?.map((member) => (
                     <Avatar src={member.img}/>
                 ))}
-            </Members>
+            </Members> */}
             {/* <Button>View Project</Button> */}
         </Card>
     )
