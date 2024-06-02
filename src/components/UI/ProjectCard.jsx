@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const Button = styled.button`
     display: none;
@@ -138,12 +139,12 @@ const Avatar = styled.img`
 const ProjectCards = ({project,setOpenModal}) => {
     return (
         <Card onClick={() => setOpenModal({state: true, project: project})}>
-            <Image src={project.image}/>
+            <LazyLoadImage src={project.image} effect='blur'/> 
             <Tags>
                 {project.tags?.map((tag, index) => (
                 <Tag>{tag}</Tag>
                 ))}
-            </Tags>
+            </Tags> 
             <Details>
                 <Title>{project.title}</Title>
                 <Date>{project.date}</Date>
