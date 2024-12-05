@@ -139,7 +139,7 @@ const Avatar = styled.img`
 const ProjectCards = ({project,setOpenModal}) => {
     return (
         <Card onClick={() => setOpenModal({state: true, project: project})}>
-            <LazyLoadImage src={project.image} effect='blur'/> 
+            <Image src={project.image} effect='blur'/> 
             <Tags>
                 {project.tags?.map((tag, index) => (
                 <Tag>{tag}</Tag>

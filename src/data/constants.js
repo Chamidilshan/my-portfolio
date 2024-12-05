@@ -1,22 +1,4 @@
-export const Bio = {
-    name: "Rishav Chanda",
-    roles: [
-      "CS Undergraduate",
-      "Software Engineer",
-      "Full Stack Developer",
-      // "Programmer",
-    ],
-    description:
-      "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
-    github: "https://github.com/rishavchanda",
-    resume:
-      "https://drive.google.com/file/d/1txFKZD3LNIXMc329jD9c995AU8LItOXK/view?usp=drive_link",
-    linkedin: "https://www.linkedin.com/in/rishav-chanda-b89a791b3/",
-    twitter: "https://twitter.com/RishavChanda",
-    insta: "https://www.instagram.com/rishav_chanda/",
-    facebook: "https://www.facebook.com/rishav.chanda.165/",
-  };
-  
+
   export const skills = [
     {
       title: "Frontend",
@@ -236,25 +218,39 @@ export const Bio = {
   ];
   
   export const experiences = [
-    // {
-    //   id: 0,
-    //   img: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAQlBMVEVHcEwAQXsAQXsAQXsAQXoAQXoAQXsARoEAN3cwWodiepagq7a4v8bLzs+Ql57o6On///8ATYkBYJ8BVpQBbaxgl8BYwyGlAAAABnRSTlMAZnp4eHpxgpewAAAA8UlEQVR4AX3TB5aDMAwAUcBF7kXe3P+qK+RYpE8Kfnx62bb9UDOtZXKOzE5mv7ZvZg0BeOI4Hh6bEvIhpkylWErwNE8xspXaHiruRD3N5/ZUYFRskNpzc7Oazb9YBUZ1Yi+Ni4hjjN6B5k0k65Gt4h+FyA6EWpAqyEi6kGyENssBZVWrN8U4cltcPK3KqO6IKNpqGa+Ityqc/ROO80huWbQ/IymV7hoY+VQEae2JEUDwUqyMiZBPRZQcw8RoQe5KWcVpLQCjJvTtperkrrjwit5eWF7W8ySCIddLUnB2oVmPI3iq09iujt8PtbwOrx379g/8CCGyX5n8awAAAABJRU5ErkJggg==",
-    //   role: "Software Engineer",
-    //   company: "SCITS  (Remote)",
-    //   date: "Jan 2024 - Mar 2024",
-    //   desc: "Developed the big screen real-time score board system for Sri Lanka Cricket. It utilizes Node.js and Socket.IO to fetch real-time data from a MySQL database. It was successfully tested and used during the Zimbabwe tour in January 2024 and will be used for all cricket matches in Sri Lanka going forward.", 
-    //   skills: [
-    //     "ReactJS",
-    //     "Socket.io",
-    //     "NodeJs",
-    //     "Tailiwind CSS",
-    //     "MySQL",
-    //     "Flutter",
-    //   ],
-    //   doc: "https://github-production-user-asset-6210df.s3.amazonaws.com/89196733/304622622-ebdc0171-2239-4319-996a-666eec1c00a3.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240214%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240214T062429Z&X-Amz-Expires=300&X-Amz-Signature=a5fcee79f67372d826c863c20728b389ab58e5b495bf964811aa495276379002&X-Amz-SignedHeaders=host&actor_id=89196733&key_id=0&repo_id=756392214",
-    // },
+    {
+      id: 0,
+      img: "https://github.com/user-attachments/assets/c17d807c-b6c2-4d2c-a826-078a2651ee7d",
+      role: "Associate Software Engineer",
+      company: "Allion Technologies",
+      date: "Apr 2024 - ",
+      // skills: [
+      //   "ReactJS",
+      //   "Flutter",
+      //   "Socket.io",
+      //   "NodeJs",
+      //   "MySQL",
+      // ],
+      doc: "https://github.com/user-attachments/assets/c17d807c-b6c2-4d2c-a826-078a2651ee7d",
+    },
     {
       id: 1,
+      img: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAQlBMVEVHcEwAQXsAQXsAQXsAQXoAQXoAQXsARoEAN3cwWodiepagq7a4v8bLzs+Ql57o6On///8ATYkBYJ8BVpQBbaxgl8BYwyGlAAAABnRSTlMAZnp4eHpxgpewAAAA8UlEQVR4AX3TB5aDMAwAUcBF7kXe3P+qK+RYpE8Kfnx62bb9UDOtZXKOzE5mv7ZvZg0BeOI4Hh6bEvIhpkylWErwNE8xspXaHiruRD3N5/ZUYFRskNpzc7Oazb9YBUZ1Yi+Ni4hjjN6B5k0k65Gt4h+FyA6EWpAqyEi6kGyENssBZVWrN8U4cltcPK3KqO6IKNpqGa+Ityqc/ROO80huWbQ/IymV7hoY+VQEae2JEUDwUqyMiZBPRZQcw8RoQe5KWcVpLQCjJvTtperkrrjwit5eWF7W8ySCIddLUnB2oVmPI3iq09iujt8PtbwOrx379g/8CCGyX5n8awAAAABJRU5ErkJggg==",
+      role: "Associate Software Engineer",
+      company: "SCITS  (Remote)",
+      date: "Dec 2023 - Apr 2024",
+      desc: "Developed the big screen real-time score board system for Sri Lanka Cricket. It utilizes Node.js and Socket.IO to fetch real-time data from a MySQL database. It was successfully tested and used during the Zimbabwe tour in January 2024 and will be used for all cricket matches in Sri Lanka going forward.", 
+      skills: [
+        "ReactJS",
+        "Flutter",
+        "Socket.io",
+        "NodeJs",
+        "MySQL",
+      ],
+      doc: "https://github-production-user-asset-6210df.s3.amazonaws.com/89196733/304622622-ebdc0171-2239-4319-996a-666eec1c00a3.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240214%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240214T062429Z&X-Amz-Expires=300&X-Amz-Signature=a5fcee79f67372d826c863c20728b389ab58e5b495bf964811aa495276379002&X-Amz-SignedHeaders=host&actor_id=89196733&key_id=0&repo_id=756392214",
+    },
+    {
+      id: 2,
       img: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAw1BMVEX//////v////7+///89u/33s779vLup4Hrf0Tvroy4vMu6vM/R0t31z7zzxq756N/vpXwAAF0AFmdTWonZ2uP00cHqdTXsUQDqaSLrj2R4f6IbKG0iLnArN3TtVwDucDfvl3XsbirtWgDucjrw8fQ/R32DiKbrXwDxtZvxvKHtYBWqrsNrcpjzrpRHUIIUI2v7+/xia5bsd0LtYRyYm7ULHmjAw8+JkK7tg1Q6Q3xbY4/woYHztaBcbJn3tJDn1dEAAGH/vN82AAABbElEQVR4AWVSBa7DMAxN7TKOKVnpj5mZ7n+qnzVaQX2qTOozxURAInkA/woeEvxqTH+VUg7woACmQqTMcmIhPaayXFnKNHCRY8iKKsyUmvWoarqhJiQEAqZlQ2LLjmG4qldxNe9Hsau1eoNwNFttjo7rdJ00TY+yvsm11/GDMIziPyWbZjBkjI4GhLjjaKLC1J9NSIo56y/osMGZTd4leu3ZMu0SFnRls/V8IxpHw++4KdFerUeD7Xo74DZM9d1+pkG60gM7Nsh8zQUPLf1Z3FIgbWdB2WBw6q/PPC8o08nFj5q//Z2u7LrY3rgciPV5fnwH0dHmQNmxVqut2dFyHq5HEGM/VAWzcaMrk+MwpM9Xe2ao4HImkgQnuj5sROn1exZHl0vkB00x1aD3+djJgxxqn4MSJbv9LXbTsBubpLcBtwgq7lTBhFYCIOJXApHEKECgcJJCCl2+GyQg5WKYemVg4bxLadMrl3IV/gF1FB4AYcyb0wAAAABJRU5ErkJggg==",
       role: "Software Engineer Intern",
       company: "APP 360 Pvt. Ltd. (Remote)",
@@ -269,7 +265,7 @@ export const Bio = {
       doc: "https://github-production-user-asset-6210df.s3.amazonaws.com/89196733/304622622-ebdc0171-2239-4319-996a-666eec1c00a3.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20240214%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20240214T062429Z&X-Amz-Expires=300&X-Amz-Signature=a5fcee79f67372d826c863c20728b389ab58e5b495bf964811aa495276379002&X-Amz-SignedHeaders=host&actor_id=89196733&key_id=0&repo_id=756392214",
     },
     {
-      id: 2,
+      id: 3,
       img: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAWlBMVEVHcEwcv3Mdv3Mdv3Mdv3Mdv3Mdv3Mdv3Mdv3Mdv3Mdv3Mdv3Mdv3Mdv3MZvnEownpEyouN37mx6c/P8uFSzpTY9Of///8xxYDF79tp1aL2/fl+26/r+fOD3LMHiQuEAAAADnRSTlMAAi91odHr/T3b/x2LwH642EYAAAEXSURBVHgBfJIFEoQwEATjC/HD9f/fPGxTWNE40/GQBGVcSAWgpOCMkjs0EznoA8hFdlOMVfoMKGvOeeZA3wCXnfJcvyCzR+69Dgt3wzjM468oy7JIhtv6QS1+V3WzUiYBLF0bwP63XYMCopZGqMAG+mFJu9+vDzqxVMFy7OC45HXrd/ROzgiHowN9sQr9DtYCnGALeweQKR51CCL1RiheBZAEx1AMw5oMC+caFIGjhljtfaiqcTgJcAg4ii54X10FpdGYN0FfBUXktyCJ+BRAEA6fAk9T/S7kjFDxJViKy/0qgMrOGyaO49yv+2JcCKmC85ZbOD/BmfdNjUj2H+Fkj8g4XJgZh4lQ1kPPvDzImZcHnnkJZn8ACoYrvpoAaW4AAAAASUVORK5CYII=",
       role: "Freelancer",
       company: "Fiverr",

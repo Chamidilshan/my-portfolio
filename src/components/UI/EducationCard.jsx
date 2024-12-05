@@ -147,7 +147,7 @@ const EducationCard = ({ education }) => {
                     {education.desc}
                     {/* </Span> */}
             </Description>
-        </Card>
+        </Card> 
     )
 }
 

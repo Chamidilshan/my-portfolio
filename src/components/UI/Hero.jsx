@@ -1,7 +1,6 @@
 import React from 'react'
 import heroImg from '../../assets/images/hero.png'
 import CountUp from 'react-countup' 
-import {Bio} from '../../data/constants'
 import Typewriter from 'typewriter-effect'; 
 import { FaFacebookF, FaYoutube, FaLinkedinIn, FaReact, FaNode, FaMedium , FaGithub  } from "react-icons/fa";
 import { SiTailwindcss, SiFigma, SiNextdotjs, SiFlutter, SiMedium   } from "react-icons/si";
@@ -24,7 +23,11 @@ const Hero = () => {
                         I'm Chamika Dilshan <br/>
                         <Typewriter
                                     options={{
-                                        strings: Bio.roles,
+                                        strings: [
+                                          "CS Undergraduate",
+                                          "Software Engineer",
+                                          "Full Stack Developer",
+                                        ],
                                         autoStart: true,
                                         loop: true,
                                     }}
