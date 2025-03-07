@@ -1,227 +1,53 @@
-import { CloseRounded, GitHub, LinkedIn } from '@mui/icons-material';
+import { CloseRounded } from '@mui/icons-material';
 import { Modal } from '@mui/material';
-import React from 'react'
-import styled from 'styled-components'  
+import React from 'react';
 
-const Container = styled.div`
-width: 100%;
-height: 100%;
-position: absolute;
-top: 0; 
-left: 0;
-background-color: #000000a7;
-display: flex;
-align-items: top;
-justify-content: center;
-overflow-y: scroll;
-transition: all 0.5s ease;
-`;
+const ProjectDetails = ({ openModal, setOpenModal }) => {
+  const project = openModal?.project;
+  return (
+    <Modal open={true} onClose={() => setOpenModal({ state: false, project: null })}>
+      <div className='fixed inset-0 bg-black bg-opacity-70 flex items-start justify-center overflow-y-auto'>
+        <div className='bg-white rounded-lg max-w-2xl w-full m-6 p-6 relative'>
+          <CloseRounded
+            className='absolute top-2 right-2 cursor-pointer bg-white'
+            onClick={() => setOpenModal({ state: false, project: null })}
+          />
+          <img src={project?.image} alt={project?.title} className='w-full h-64 object-cover rounded-lg shadow-md' />
+          <h2 className='text-2xl font-bold text-gray-800 mt-4'>{project?.title}</h2>
+          <p className='text-sm text-gray-500'>{project?.date}</p>
+          <div className='flex flex-wrap gap-2 mt-2'>
+            {project?.tags.map((tag, index) => (
+              <span key={index} className='px-3 py-1 bg-teal-100 text-teal-500 text-xs rounded-full'>
+                {tag}
+              </span>
+            ))}
+          </div>
+          <p className='text-gray-700 mt-4'>{project?.description}</p>
+          {project?.member && (
+            <div className='mt-6'>
+              <h3 className='text-lg font-semibold text-gray-800'>Members</h3>
+              <div className='flex flex-wrap gap-4 mt-2'>
+                {project.member.map((member, index) => (
+                  <div key={index} className='flex items-center gap-2'>
+                    <img src={member.image} alt={member.name} className='w-10 h-10 rounded-full' />
+                    <span className='text-gray-800'>{member.name}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+          <div className='flex justify-end gap-4 mt-6'>
+            <a href={project?.github} target='_blank' rel='noopener noreferrer' className='px-4 py-2 bg-gray-200 text-gray-800 rounded-lg'>
+              View Code
+            </a>
+            <a href={project?.webapp} target='_blank' rel='noopener noreferrer' className='px-4 py-2 bg-blue-500 text-white rounded-lg'>
+              View Live App
+            </a>
+          </div>
+        </div>
+      </div>
+    </Modal>
+  );
+};
 
-const Wrapper = styled.div`
-max-width: 800px;
-width: 100%;
-border-radius: 16px;
-margin: 50px 12px;
-height: min-content;
-background-color: #FFFFFF;
-display: flex;
-color: ${({ theme }) => theme.text_primary};
-padding: 20px;
-display: flex;
-flex-direction: column;
-position: relative;
-`;
-
-const Title = styled.div`
-  font-size: 28px;
-  font-weight: 600;
-  color: #ffffff;
-  margin: 8px 6px 0px 6px;
-  @media only screen and (max-width: 600px) {
-      font-size: 24px;
-      margin: 6px 6px 0px 6px;
-  }
-`;
-
-const Date = styled.div`
-    font-size: 16px;
-    margin: 2px 6px;
-    font-weight: 400;
-    color: ${({ theme }) => theme.text_secondary};
-    @media only screen and (max-width: 768px){
-        font-size: 12px;
-    }
-`
-
-
-
-const Desc = styled.div`
-    font-size: 16px;
-    font-weight: 400;
-    color: ${({ theme }) => theme.text_primary};
-    margin: 8px 6px;
-    @media only screen and (max-width: 600px) {
-        font-size: 14px;
-        margin: 6px 6px;
-    }
-`;
-
-const Image = styled.img`
-    width: 100%;
-    object-fit: cover;
-    border-radius: 12px;
-    margin-top: 30px;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
-`;
-
-const Label = styled.div`
-    font-size: 20px;
-    font-weight: 600;
-    color: ${({ theme }) => theme.text_primary};
-    margin: 8px 6px;
-    @media only screen and (max-width: 600px) {
-        font-size: 16px;
-        margin: 8px 6px;
-    }
-`;
-
-const Tags = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-    margin: 8px 0px;
-    @media only screen and (max-width: 600px) {
-        margin: 4px 0px;
-    }
-`;
-
-const Tag = styled.div`
-    font-size: 14px;
-    font-weight: 400;
-    color: ${({ theme }) => theme.primary};
-    margin: 4px;
-    padding: 4px 8px;
-    border-radius: 8px;
-    background-color: ${({ theme }) => theme.primary + 20};
-    @media only screen and (max-width: 600px) {
-        font-size: 12px;
-    }
-`;
-
-const Members = styled.div`
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-    flex-wrap: wrap;
-    margin: 12px 6px;
-    @media only screen and (max-width: 600px) {
-        margin: 4px 6px;
-    }
-`;
-
-const Member = styled.div`
-    display: flex;
-    align-items: center;
-    gap: 12px;
-`;
-
-const MemberImage = styled.img`
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-bottom: 4px;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
-    @media only screen and (max-width: 600px) {
-        width: 32px;
-        height: 32px;
-    }
-`;
-
-const MemberName = styled.div`
-    font-size: 16px;
-    font-weight: 500;
-    width: 200px;
-    color: ${({ theme }) => theme.text_primary};
-    @media only screen and (max-width: 600px) {
-        font-size: 14px;
-    }
-`;
-
-
-const ButtonGroup = styled.div`
-    display: flex;
-    justify-content: flex-end;
-    margin: 12px 0px;
-    gap: 12px;
-`;
-
-const Button = styled.a`
-    width: 100%;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 600;
-    color: ${({ theme }) => theme.text_primary};
-    padding: 12px 16px;
-    border-radius: 8px;
-    background-color: ${({ theme }) => theme.primary};
-    ${({ dull, theme }) => dull && `
-        background-color: ${theme.bgLight};
-        color: ${theme.text_secondary};
-        &:hover {
-            background-color: ${({ theme }) => theme.bg + 99};
-        }
-    `}
-    cursor: pointer;
-    text-decoration: none;
-    transition: all 0.5s ease;
-    &:hover {
-        background-color: ${({ theme }) => theme.primary + 99};
-    }
-    @media only screen and (max-width: 600px) {
-        font-size: 12px;
-    }
-`;
-
-
-const index = ({ openModal, setOpenModal }) => {
-    const project = openModal?.project;
-    return (
-        <Modal open={true} onClose={() => setOpenModal({ state: false, project: null })}>
-            <Container>
-                <Wrapper>
-                    <CloseRounded
-                        style={{
-                            position: "absolute",
-                            top: "10px",
-                            right: "20px",
-                            cursor: "pointer",
-                            backgroundColor: "white"
-                        }}
-                        onClick={() => setOpenModal({ state: false, project: null })}
-                    />
-                    <Image src={project?.image} />
-                    <Title className='text-white'>{project?.title}</Title>
-                    <Date>{project.date}</Date>
-                    <Tags>
-                        {project?.tags.map((tag) => (
-                            <Tag>{tag}</Tag>
-                        ))}
-                    </Tags>
-                    <Desc>{project?.description}</Desc>
-                    {project.member && (
-                        <>
-                            <Label>Members</Label>
-                        </>
-                    )}
-                    <ButtonGroup>
-                        <Button dull href={project?.github} target='new'>View Code</Button>
-                        <Button href={project?.webapp} target='new'>View Live App</Button>
-                    </ButtonGroup>
-                </Wrapper>
-            </Container>
-
-        </Modal>
-    )
-}
-
-export default index
+export default ProjectDetails;

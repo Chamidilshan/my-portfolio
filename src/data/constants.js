@@ -1,4 +1,13 @@
 
+import image1 from '../assets/images/tastyDog.png';
+import image2 from '../assets/images/tastyDog1.png';
+import image3 from '../assets/images/tastyDog2.png';
+import image4 from '../assets/images/tastyDog3.png';
+import dawnImage from '../assets/images/image1.jpeg';
+import slExplImage1 from '../assets/images/slExplorer1 (1).jpeg';
+import slExplImage2 from '../assets/images/slExplorer1 (2).jpeg';
+import slExplImage3 from '../assets/images/slExplorer1 (3).jpeg';
+
   export const skills = [
     {
       title: "Frontend",
@@ -285,14 +294,14 @@
       id: 0,
       img: "",
       school: "Bachelor of Computer Science",
-      date: "Sep 2021 - Present",
+      date: "Sep 2021 - Nov 2024",
       grade: "",
-      desc: "I'm currently in my third year pursuing a Bachelor's degree in Computer Science at the University of Ruhuna. Alongside my studies, I'm an active member of the Computer Science Student Community. Recently, I organized the GDG Outreach Program in collaboration with Google Developer Groups. It was the first event held after establishing the community, and I'm proud of its success.",
+      desc: "I have completed my Bachelor's degree in Computer Science at the University of Ruhuna. Alongside my studies, I'm an active member of the Computer Science Student Community. Recently, I organized the GDG Outreach Program in collaboration with Google Developer Groups. It was the first event held after establishing the community, and I'm proud of its success.",
       degree: "Department of Computer Science, University of Ruhuna, Sri Lanka",
     },
     {
       id: 1,
-      img: "https://dssca.online/wp-content/uploads/2023/09/DSLG_FB.png",
+      img: "https://dssca.edu.lk/wp-content/uploads/2023/09/DSLG_FB-150x150.png",
       school: "G.C.E. Advanced Level Examination",
       date: "2017 - 2019",
       grade: "Physical Science Stream",
@@ -301,7 +310,7 @@
     },
     {
       id: 2,
-      img: "https://dssca.online/wp-content/uploads/2023/09/DSLG_FB.png",
+      img: "https://dssca.edu.lk/wp-content/uploads/2023/09/DSLG_FB-150x150.png",
       school: "G.C.E. Oridnary Level Examination",
       date: "2011 - 2016",
       grade: "9 \"A\"s",
@@ -317,8 +326,7 @@
       date: "Aug 2023 - Sep 2023",
       description: 
         "Developed the Dawn Resort website, with a teammate a cool web app that shows off a amazing resort. I built it using React, so it's easy to use on any device.  If you want to get in touch, just fill out the contact form, and responses are saved in firebase database. Our site is super fast and reliable thanks to Netlify.",
-      image:
-        "https://github.com/Chamidilshan/my-portfolio/assets/89196733/6a862498-4042-4bc2-92cc-ee671abd0822",
+      images: [dawnImage],
       tags: ["React Js", "Firebase", "Netlify"],
       category: "web app",
       github: "https://github.com/Chamidilshan/dawn-resourt-app", 
@@ -330,7 +338,7 @@
       date: "Jan 2023 - Mar 2023", 
       description:
         "Developed a mobile app to seamlessly integrates with OpenAI's powerful language model, allowing users to engage in dynamic conversations. Its user-friendly design simplifies the input process, while the option to save API keys ensures seamless integration with OpenAI's technology",
-      image:
+      images:
         "https://github.com/Chamidilshan/my-portfolio/assets/89196733/39731a64-7b6e-42f9-9d8a-446c31da9092",
       tags: [
         "Flutter",
@@ -350,8 +358,7 @@
       date: "Dec 2023 - Apr 2024", 
       description:
       "Designed and developed a mobile and web app for SL Explorer, a travel company. It's a one-stop solution for anyone eager to explore the beauty of Sri Lanka.",
-      image: 
-        "https://github.com/Chamidilshan/translator-web-app/assets/89196733/4f27107c-cf06-4e6b-9a69-1eb53b4c00c5",
+      images: [slExplImage1, slExplImage2, slExplImage3],
       tags: ["React.js", "Node.js", "Flutter", "MongoDB", "Materail UI", "Firebase"],
       github: "https://github.com/Chamidilshan/sl-explorer-admin-web",
     },
@@ -361,7 +368,7 @@
       date: "Mar 2023 - May 2023",
       description:
         "Developed a lively quiz app centered on commerce using Flutter. It taps into Firebase Realtime Database for storing and fetching quiz questions. With multiple-choice questions and randomized selections from a large pool, users enjoy a dynamic experience. The app tracks scores and displays the final tally, all while seamlessly integrating with Firebase for smooth data management. Installing it is a breeze, making it accessible for anyone eager to dive into the world of commerce quizzes.",
-      image:
+      images:
       "https://github.com/Chamidilshan/translator-web-app/assets/89196733/ed3bc47f-6232-4a0d-871e-4b244f886104",
       tags: ["Flutter", "Firebase", "Firestore",],
       category: "android app",
@@ -373,7 +380,7 @@
       date: "Feb 2024",
       description:
         "Developed an AI-powered web app built with Next.js and Hugging Face API, providing seamless translation across multiple languages",
-      image:
+      images:
         "https://github.com/Chamidilshan/translator-web-app/assets/89196733/11671c08-f840-44a4-840b-8b7a1a32858c",
       tags: ["Next.js", "Hugging Face",],
       category: "web app",  
@@ -385,8 +392,19 @@
       date: "Feb 2024",
       description:
         "Developed an AI-powered web app built with Next.js and Hugging Face API, providing seamless translation across multiple languages",
-      image:
+      images:
         "https://github.com/Chamidilshan/translator-web-app/assets/89196733/e2bce9e9-8219-4f82-9cd1-bccecb62d58c",
+      tags: ["Flutter", "Firebase",],
+      category: "Flutter", 
+      github: "https://github.com/Chamidilshan/translator-web-app", 
+    },
+    {
+      id: 7,
+      title: "Tasty Dog Apps",
+      date: "Aug 2024",
+      description:
+        "Developed an AI-powered web app built with Next.js and Hugging Face API, providing seamless translation across multiple languages",
+      images: [image1, image2, image3, image4],
       tags: ["Flutter", "Firebase",],
       category: "Flutter", 
       github: "https://github.com/Chamidilshan/translator-web-app", 
