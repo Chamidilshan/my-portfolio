@@ -17,11 +17,14 @@ const Projects = ({ openModal, setOpenModal }) => {
     <section id='projects' className='text-white py-12 px-4'>
       <div className='text-center mb-8'>
         <h2 className='text-4xl font-bold mb-4'>Projects</h2>
-        <p className='text-lg text-gray-400'>
+        {/* <p className='text-lg text-gray-400'>
           I've been involved in a diverse array of projects, initially focusing on mobile and software development. Here's a glimpse of some of my work.
-        </p>
+        </p> */}
+        <p className='text-lg '>
+            My project section is currently being updated. Please navigate to <a href="https://projects.chamikadilshan.me" className='underline text-green-700' target="_blank">projects.chamikadilshan.me</a> for my projects.
+          </p>
       </div>
-      <div className='grid grid-cols-1 md:grid-cols-2 gap-8 w-full'>
+      {/* <div className='grid grid-cols-1 md:grid-cols-2 gap-8 w-full'>
         {toggle === 'all' &&
           projects.map((project) => (
             <div className='w-full' key={project.id}>
@@ -35,7 +38,7 @@ const Projects = ({ openModal, setOpenModal }) => {
               <ProjectCard project={project} openModal={openModal} setOpenModal={setOpenModal} />
             </div>
           ))}
-      </div>
+      </div> */}
     </section>
   );
 };
