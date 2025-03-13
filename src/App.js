@@ -1,36 +1,39 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, Suspense, lazy } from "react";
 import Aos from "aos";
 import "./App.css";
-import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
-import Hero from './components/UI/Hero';
-import Education from './components/UI/Education';
-import Experience from "./components/UI/Expereince"; 
-import Project from "./components/UI/Project";
-import ProjectDetails from "./components/UI/ProjectDetails";
-import Contact from "./components/UI/Contact";
+
+const Header = lazy(() => import("./components/Header/Header"));
+const Footer = lazy(() => import("./components/Footer/Footer"));
+const Hero = lazy(() => import('./components/UI/Hero'));
+const Education = lazy(() => import('./components/UI/Education'));
+const Experience = lazy(() => import("./components/UI/Expereince"));
+const Project = lazy(() => import("./components/UI/Project"));
+const ProjectDetails = lazy(() => import("./components/UI/ProjectDetails"));
+const Contact = lazy(() => import("./components/UI/Contact"));
 
 function App() {
   useEffect(() => {
     Aos.init();
-  }, []); 
+  }, []);
 
   const [openModal, setOpenModal] = useState({ state: false, project: null });
 
-  return <>
-    <Header />
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <Header />
       <main>
-        <Hero/> 
-        <Experience/>
+        <Hero />
+        <Experience />
         <Project openModal={openModal} setOpenModal={setOpenModal} />
-        <Education/>
-        <Contact/>
+        <Education />
+        <Contact />
       </main>
-    {/* <Footer /> */}
-    {openModal.state &&
-            <ProjectDetails openModal={openModal} setOpenModal={setOpenModal} />
-          } 
-  </>
+      {/* <Footer /> */}
+      {openModal.state && (
+        <ProjectDetails openModal={openModal} setOpenModal={setOpenModal} />
+      )}
+    </Suspense>
+  );
 }
 
 export default App;

@@ -1,3 +1,24 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Dark mode styles */
+:root {
+  --primaryColor: white;
+  --smallTextColor: #111;
+}
+
+.dark :root {
+  --primaryColor: #1a202c;
+  --smallTextColor: #a0aec0;
+}
+
+body {
+  background-color: var(--primaryColor);
+  color: var(--smallTextColor);
+}
+
+.dark body {
+  background-color: var(--primaryColor);
+  color: var(--smallTextColor);
+}

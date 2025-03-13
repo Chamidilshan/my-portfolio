@@ -1,6 +1,4 @@
-
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
 import Timeline from '@mui/lab/Timeline';
 import TimelineItem from '@mui/lab/TimelineItem';
 import TimelineSeparator from '@mui/lab/TimelineSeparator';
@@ -10,98 +8,32 @@ import TimelineDot from '@mui/lab/TimelineDot';
 import ExperienceCard from './ExperienceCard';
 import { experiences } from '../../data/constants';
 
-const Container = styled.div` 
-    display: flex;
-    color: #ffffff;
-    flex-direction: column; 
-    justify-content: center;
-    position: relative;
-    z-index: 1;
-    align-items: center;
-    padding: 40px 0px 80px 0px;
-    @media (max-width: 960px) {
-        padding: 0px;
-    }
-`;
+const Experience = () => {
+  return (
+    <section id='experience' className='flex flex-col items-center justify-center py-12 px-4'>
+      <div className='text-center mb-8'>
+        <h2 className='text-4xl font-bold text-white mb-4'>Experience</h2>
+        <p className='text-lg text-gray-400'>
+          My work experience in the software industry, working on different projects.
+        </p>
+      </div>
+      <div className='w-full max-w-4xl'>
+        <Timeline>
+          {experiences.map((experience, index) => (
+            <TimelineItem key={index}>
+              <TimelineSeparator>
+                <TimelineDot variant='outlined' className='bg-blue-500' />
+                {index !== experiences.length - 1 && <TimelineConnector className='bg-blue-500' />}
+              </TimelineSeparator>
+              <TimelineContent className='py-3 px-2'>
+                <ExperienceCard experience={experience} />
+              </TimelineContent>
+            </TimelineItem>
+          ))}
+        </Timeline>
+      </div>
+    </section>
+  );
+};
 
-const Wrapper = styled.div`
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    max-width: 1350px;
-    padding: 80px 0;
-    gap: 12px;
-    @media (max-width: 960px) {
-        flex-direction: column;
-    }
-`;
-
-const Title = styled.div`
-font-size: 42px;
-text-align: center;
-font-weight: 600;
-margin-top: 20px;
-  color: ${({ theme }) => theme.text_primary};
-  @media (max-width: 768px) {
-      margin-top: 12px;
-      font-size: 32px;
-  }
-`;
-
-const Desc = styled.div`
-    font-size: 18px;
-    text-align: center;
-    max-width: 600px;
-    color: ${({ theme }) => theme.text_secondary};
-    @media (max-width: 768px) {
-        margin-top: 12px;
-        font-size: 16px;
-    }
-`;
-
-const TimelineSection = styled.div`
-    width: 100%;
-    max-width: 1000px;
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-`;
-
-
-
-const index = () => {
-    return (
-        <Container id="experience">
-            <Wrapper>
-                <Title>Experience</Title>
-                <Desc>
-                My work experience in software industry, working on different projects.
-                </Desc>
-                <TimelineSection>
-                    <Timeline>
-                        {experiences.map((experience,index) => (
-                            <TimelineItem>
-                                <TimelineSeparator>
-                                    <TimelineDot variant="outlined" style={{ background: '#197FE6' }} />
-                                    {index !== experiences.length - 1 && <TimelineConnector style={{ background: '#197FE6' }} />}
-                                </TimelineSeparator>
-                                <TimelineContent sx={{ py: '12px', px: 2 }}> 
-                                    <ExperienceCard experience={experience}/>
-                                </TimelineContent>
-                            </TimelineItem>
-                        ))}
-                    </Timeline>
-
-                </TimelineSection>
-            </Wrapper>
-        </Container>
-    )
-}
-
-export default index
+export default Experience;
