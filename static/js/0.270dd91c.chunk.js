@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkportfolio_website=self.webpackChunkportfolio_website||[]).push([[0],{3e3:(e,t,s)=>{s.r(t),s.d(t,{default:()=>r});s(2791);var a=s(184);const r=()=>(0,a.jsx)("footer",{className:"bg-gray-800 text-white py-6",children:(0,a.jsx)("div",{className:"container mx-auto px-4 text-center",children:(0,a.jsxs)("p",{className:"text-sm",children:["\xa9 ",(new Date).getFullYear()," Chamika. All rights reserved."]})})})}}]);
+//# sourceMappingURL=0.270dd91c.chunk.js.map
